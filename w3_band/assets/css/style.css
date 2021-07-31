@@ -1,0 +1,538 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*
+1. vi tri
+2. kich thuoc
+3. mau sac
+4. kieu dang */
+
+/*dung chung*/
+
+.clear{
+    clear: both;
+}
+.text-white{
+    color: #fff  ;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-third{
+    width: calc(100%/3);
+}
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.mt8{
+    margin-top: 8px !important;
+}
+.mt16{
+    margin-top: 16px !important;
+}
+/*dung rieng*/
+html{
+    font-family: sans-serif;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+#header{
+height: 46px;
+background: black;
+position: fixed;
+top:0;
+right:0;
+left:0;
+z-index: 1;
+}
+
+#nav{
+cursor: pointer;
+display:inline-block ;
+
+} 
+#nav , .subnav{
+    list-style-type: none;
+}
+#nav > li{
+    display: inline-block;
+}
+
+#nav li {
+
+position: relative;
+
+
+} 
+#nav > li > a{ 
+     color:white;
+     text-transform: uppercase;
+    
+    }
+     
+
+#nav  li  a{
+  
+    text-decoration:none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+.subnav li:hover a ,
+#nav >li:hover >a{
+    color: black;
+    background: #ccc;
+
+}
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav {
+  display: none;
+position: absolute;
+background-color: #fff ;
+box-shadow: 0 0 10px rgba(0, 0,0, 0.3);
+
+}
+
+
+#nav .subnav li a{
+    color: black;
+  line-height: 38px;
+  padding: 0 16px;
+  min-width: 160px;
+}
+#nav .nav-arrow-down{
+    font-size: 14px;
+}
+
+#header .seach-btn{
+    line-height: 46px;
+    padding: 0 23px;
+    float: right;
+}
+#header .seach-btn:hover{
+    background-color: #f44336;
+    color: #fff;
+    cursor: pointer;
+}
+#header .seach-icon{
+    color: #fff;
+}
+#header .molibe-menu{
+    line-height: 46px;
+    padding: 0 23px;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none
+}
+#header .molibe-menu:hover {
+    background-color: #ccc;
+    
+}
+
+#header .molibe-menu:hover .icon-menu-btn{
+    color: #000;
+    
+} 
+#header .icon-menu-btn{
+    color:#fff;
+}
+#slider{
+background-color:#f44336;
+width: 100%;
+padding-top: 50%;
+margin-top: 46px;
+background: url("/assets/img/slider1.jpg") top center / cover no-repeat;
+position: relative;
+}
+#slider .text-content{
+position: absolute;
+bottom: 32px;
+text-align: center;
+width: 100%;
+
+}
+#slider .text-heading{
+color: #fff;
+font-weight: 400;
+
+}
+#slider .text-p{
+color: #fff;
+font-weight: bolder;
+margin-top: 25px;
+
+}
+
+
+
+#content .content-section{
+    padding: 64px 16px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content .section-heading{
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-size: 30px;
+
+}
+#content .section-supheading{
+    text-align: center;
+    margin-top: 25px;
+    opacity: 0.6;
+    font-style: italic;
+   font-size: 15px;
+
+}
+#content .about-text{
+margin-top: 30px;
+line-height: 1.5;
+text-align: justify;
+font-size: 15px;
+}
+
+#content .member-list{
+margin-top: 47px;
+    
+}
+
+#content .member-name{
+    
+    font-size: 15px;
+}
+#content .member-img{
+    margin-top: 15px;
+    width: 134px;
+    border-radius: 4px;
+  
+
+}
+/*taur section */
+#content .taur-section{
+    background-color: black;
+    
+}
+
+
+
+#content .ticket-list{
+    background-color: #fff;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #757575;
+    list-style-type: none;
+
+}
+.ticket-list li{
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+#content .Sold-out{
+    margin-left: 16px;
+    background-color: #f44336;
+    padding-left: 8px;
+    padding-right: 8px;
+
+
+}
+#content .quantity{
+    float: right;
+    color: #fff;
+    background-color: black;
+    border-radius: 50%;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right: 16px;
+}
+/*place */
+.place-list{
+    padding: 32px 8px;
+    margin: -16px; 
+}
+
+.place-img{
+width: 100%;
+display: block;
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+.place-body{
+font-size: 15px;
+background-color: #fff;
+padding: 0 16px;
+}
+.place-heading{
+    padding: 15px 0;
+}
+
+.place-paragram{
+    margin: 15px 0;
+}
+.place-buy-btn{
+background-color: black;
+padding: 8px 16px;
+display: inline-block;
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: #ccc;
+    border: 0px;
+}
+.place-buy-btn:hover{
+    background-color: #ccc;
+    color:#000;
+
+}
+
+/*contact css*/
+.contact-content{
+    margin-top: 47px;
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*=ti-]{
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form{
+    font-size: 15px;
+}
+
+.contact-form .form-control{
+    padding: 11px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.send-btn{
+    
+        background: black;
+        color: #ccc;
+        border: 0;
+        padding: 12px 17px;
+        float: right;
+
+}
+.send-btn:hover{
+    background: #ccc;
+    color:black;
+}
+
+.img-map{
+    width: 100%;
+    filter: grayscale(50%);
+}
+
+/*end contact css*/
+#footer{
+padding: 64px 16px;
+text-align: center;
+opacity: 0.6;
+
+}
+.Socials-list a{
+    color: #000;
+    text-decoration: none;
+}
+.coppyright a{
+    color: #000;
+}
+
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0,0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open{
+    display: flex;
+}
+.modal-container {
+    background: #fff;
+    width: 900px;
+    min-height: 200px;
+    position: relative;
+    animation: modalfadein ease 0.5s;
+    margin: 16px;
+}
+.modal-header {
+    display: flex;
+    width: 900px;
+    height: 129px;
+    background-color: #009688;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+.ti-bag{
+    margin-right: 16px
+}
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 16px;
+    color:#fff;
+}
+.modal-close:hover{
+    color: #000;
+    background-color: #ccc;
+}
+.modal-body {
+    padding: 0 16px;
+}
+
+label.modal-lable {
+    display: block;
+    margin-top: 19px;
+    margin-bottom: 7px;
+}
+input.modal-input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc
+}
+.buy-check {
+    background: #009688;
+    text-align: center;
+    margin: 16px 0;
+    padding: 16px;
+    color: #fff;
+}
+.buy-check:hover{
+    color: #000;
+    background-color: #ccc;
+}
+.modal-help {
+    float: right;
+    margin-top: 10px;
+   margin-bottom: 20px;
+}
+
+
+@keyframes modalfadein {
+    from{
+      transform: translateY(-165px);
+
+    }
+
+    to{
+     transform: translateY(0px);
+
+    }
+}
+
+@media only screen and (max-width:63.9375em) {
+    .contact-info{
+        line-height: 2;
+
+    }
+    .Socials-list a{
+        padding: 16px;
+    }
+    .coppyright a {
+        padding: 16px 0;
+        display: inline-block
+    }
+}
+    
+
+/*tablet 740 -> 1023*/
+@media only screen and (max-width:63.9375em) and (min-width:46.25em){
+    #content .content-section{
+        max-width: 100%;
+
+    }
+}
+
+/*mobie 739*/
+@media only screen and ( max-width:46.1875em ) {
+    #nav {
+        display: block;
+    } 
+    #nav > li:first-child{
+        display: inline-block;
+    }
+    #nav > li {
+        display: block ;
+    }
+    #header{
+        overflow: hidden;
+    }
+    #header .molibe-menu{
+        display: inline-block;
+    }
+    .seach-btn{
+        display: none;
+    }
+    #nav .subnav{
+        position: initial;
+        background-color: #ccc;
+    }
+    #nav .subnav li a {
+
+    padding: 5px 41px;
+}
+.col-third,
+#content .content-section{
+    width: 100%;
+    margin-bottom: 16px;
+}
+#content .member-name{
+    margin-top: 15px;
+}
+.contact-info{
+    width: 100%;
+    margin-bottom: 32px;
+}
+.s-col-third{
+    width: 100%;
+}
+}
